@@ -1,0 +1,123 @@
+// export const info = [
+//     {
+//       contractName: "TSLA220513C00200000",
+//       lastTradeDate: "2022-04-05 12:27PM EDT",
+//       strike: "200",
+//       lastPrice: "891.75",
+//       openInterest: "3",
+//     },
+//     {
+//         contractName: "TSLA220513C00780000",
+//         lastTradeDate: "2022-04-06 11:13AM EDT",
+//         strike: "780",
+//         lastPrice: "780.75",
+//         openInterest: "2",
+//       },
+
+//       {
+//         contractName: "TSLA220513C00200000",
+//         lastTradeDate: "2022-04-05 12:27PM EDT",
+//         strike: "200",
+//         lastPrice: "891.75",
+//         openInterest: "3",
+//       },
+
+//       {
+//         contractName: "TSLA220513C00200000",
+//         lastTradeDate: "2022-04-05 12:27PM EDT",
+//         strike: "200",
+//         lastPrice: "891.75",
+//         openInterest: "3",
+//       },
+//       {
+//         contractName: "TSLA220513C00200000",
+//         lastTradeDate: "2022-04-05 12:27PM EDT",
+//         strike: "200",
+//         lastPrice: "891.75",
+//         openInterest: "3",
+//       },
+//   ]
+
+
+export const info = [
+  {
+    date: "2022-01",
+    source: "Utility A",
+    electricityPrice: 50.25,
+    naturalGasPrice: 53.50,
+    used: "Gas",
+    powerPlantEfficiency: 0.35,
+  },
+  {
+    date: "2022-02",
+    source: "Utility B",
+    electricityPrice: 51.10,
+    naturalGasPrice: 33.55,
+    used: "Electricity",
+    powerPlantEfficiency: 0.23,
+  },
+  {
+    date: "2022-03",
+    source: "Utility C",
+    electricityPrice: 48.75,
+    naturalGasPrice: 33.45,
+    used: "Gas",
+    powerPlantEfficiency: 0.32,
+  },
+  {
+    date: "2022-04",
+    source: "Supplier X",
+    electricityPrice: 49.80,
+    naturalGasPrice: 50.60,
+    used: "Gas",
+    powerPlantEfficiency: 0.34,
+  },
+  {
+    date: "2022-05",
+    source: "Supplier Y",
+    electricityPrice: 47.90,
+    naturalGasPrice: 43.40,
+    used: "Electricity",
+    powerPlantEfficiency: 0.26,
+  },
+  {
+    date: "2022-06",
+    source: "Utility D",
+    electricityPrice: 52.30,
+    naturalGasPrice: 53.65,
+    used: "Electricity",
+    powerPlantEfficiency: 0.30,
+  },
+  {
+    date: "2022-07",
+    source: "Supplier Z",
+    electricityPrice: 52.65,
+    naturalGasPrice: 53.70,
+    used: "Gas",
+    powerPlantEfficiency: 0.30,
+  },
+  {
+    date: "2022-08",
+    source: "Utility E",
+    electricityPrice: 59.50,
+    naturalGasPrice: 57.48,
+    used: "Gas",
+    powerPlantEfficiency: 0.33,
+  },
+  {
+    date: "2022-09",
+    source: "Supplier W",
+    electricityPrice: 48.25,
+    naturalGasPrice: 53.52,
+    used: "Electricity",
+    powerPlantEfficiency: 0.29,
+  },
+  {
+    date: "2022-10",
+    source: "Utility F",
+    electricityPrice: 49.20,
+    naturalGasPrice: 53.75,
+    used: "Electricity",
+    powerPlantEfficiency: 0.31,
+  },
+];

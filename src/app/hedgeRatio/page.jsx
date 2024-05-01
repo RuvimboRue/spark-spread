@@ -1,7 +1,9 @@
 "use client";
 import MenuBar from '@/components/Menu';
+import FieldSelector from '@/components/Select';
 import TopBar from '@/components/Topbar';
 import { useState , useRef} from 'react';
+import { info } from '@/constants';
 
 const HedgeRatioCalculator = () => {
   const [heatRate, setHeatRate] = useState('');
@@ -85,29 +87,30 @@ const HedgeRatioCalculator = () => {
           />
         </div>
       )}
-
       <button
-        className="bg-blue-500 text-white px-4 py-2 rounded-md mt-8"
+        className="bg-blue-500 text-white px-4 py-2 rounded-md mt-8 mb-4"
         onClick={calculateHedgeRatio}
       >
         Calculate
       </button>
-      <button
-        className="bg-green-500 text-white px-4 py-2 rounded-md ml-4"
+      {/* <button
+        className="bg-green-500 text-white px-4 py-2 rounded-md ml-4 mb-4"
         onClick={handleViewGraph}
       >
         View Graph
       </button>
-
+      <br/>
+      <br/>
+      <FieldSelector className="mt-12"/> */}
       {/* Graph component */}
-      {showGraph && (
+      {/* {showGraph && (
         <div className="mt-8">
           <h2 className="text-xl font-semibold mb-4">Hedge Ratio Graph</h2>
           <div className="max-w-md mx-auto">
           <canvas id="hedgeRatioChart" ref={chartRef}></canvas>
           </div>
         </div>
-      )}
+      )} */}
     </div>
     </>
   );

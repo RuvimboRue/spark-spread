@@ -1,8 +1,7 @@
-// components/SparkSpreadGraph.js
 import { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 
-const SparkSpreadGraph = ({ sparkSpreadData }) => {
+const SparkSpreadGraph = ({ electricityPrice, fuelPrice, sparkSpreadData }) => {
     const chartRef = useRef(null);
     const chartInstance = useRef(null);
 
@@ -17,11 +16,11 @@ const SparkSpreadGraph = ({ sparkSpreadData }) => {
         chartInstance.current = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['Spark Spread'],
+                labels: [`Electricity Price: ${electricityPrice}`, `Gas Price: ${fuelPrice}`, 'Spark Spread'],
                 datasets: [{
-                    label: 'Spark Spread',
-                    data: [sparkSpreadData],
-                    backgroundColor: ['#FFA500'], // Orange color for spark spread
+                    label: 'Prices',
+                    data: [electricityPrice, fuelPrice, sparkSpreadData],
+                    backgroundColor: ['#007BFF', '#28A745', '#FFA500'], // Blue for electricity, green for gas, orange for spark spread
                 }],
             },
             options: {
@@ -32,7 +31,7 @@ const SparkSpreadGraph = ({ sparkSpreadData }) => {
                 },
             },
         });
-    }, [sparkSpreadData]);
+    }, [electricityPrice, fuelPrice, sparkSpreadData]);
 
     return (
         <div className="max-w-md mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">

@@ -4,6 +4,7 @@ import TopBar from '@/components/Topbar';
 import { useState, useRef } from 'react';
 import NoHedgeGraph from '@/components/NoHedgeGraph'; // Import your graph component
 
+
 const NoHedge = () => {
   const [gasPrice, setGasPrice] = useState('');
   const [electricityPrice, setElectricityPrice] = useState('');
